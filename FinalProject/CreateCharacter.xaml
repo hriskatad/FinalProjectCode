@@ -1,0 +1,24 @@
+﻿<Window x:Class="FinalProject.CreateCharacter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="Create Character" Height="380" Width="300">
+    <Grid Background="#FF8AA76D">
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="118,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="17" FontSize="15" FontFamily="Cambria" />
+        <TextBlock HorizontalAlignment="Left" Margin="19,122,0,0" TextWrapping="Wrap" Text="Variation: " VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontFamily="Cambria"/>
+        <TextBox x:Name="Variation" HorizontalAlignment="Left" Margin="118,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="17" FontSize="15" FontFamily="Cambria" />
+        <TextBlock HorizontalAlignment="Left" Margin="19,81,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontFamily="Cambria"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,22,0,0" TextWrapping="Wrap" Text="Create Your Character" FontSize="25" VerticalAlignment="Top" FontFamily="Impact"/>
+        <ComboBox x:Name="Tier" HorizontalAlignment="Left" Margin="118,160,0,0" VerticalAlignment="Top" Width="145" Background="White" Height="19" Grid.Row ="1" ItemsSource = "{Binding Tier1}">
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="19,161,0,0" TextWrapping="Wrap" Text="Choose Tier:" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontFamily="Cambria"/>
+        <ComboBox x:Name="Class" HorizontalAlignment="Left" Background="White" Margin="118,204,0,0" VerticalAlignment="Top" Width="145" Height="19" Grid.Row ="1" ItemsSource = "{Binding Class1}">
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="19,206,0,0" TextWrapping="Wrap" Text="Choose Class:" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontFamily="Cambria" Width="94"/>
+        <Button x:Name="Load1" Content="Go to Kollection" FontFamily="Cambria" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,302,0,0" VerticalAlignment="Top" Background="#FF8FE48D" Width="150" BorderBrush="Black" Click="Load1_Click"/>
+        <Button x:Name="AddCharacter" Content="Create Character" FontFamily="Cambria" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top" Background="#FF8FE48D" Width="150" BorderBrush="Black" Click="AddCharacter_Click"/>
+    </Grid>
+</Window>

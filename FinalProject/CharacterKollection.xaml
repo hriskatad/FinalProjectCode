@@ -1,0 +1,17 @@
+﻿<Window x:Class="FinalProject.CharacterKollection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="CharacterKollection" Height="380" Width="300">
+    <Grid Background="#FF8AA76D">
+        <TextBox x:Name="Name1" HorizontalAlignment="Left" Margin="93,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="17" FontSize="15" FontFamily="Cambria" />
+        <TextBlock HorizontalAlignment="Left" Margin="44,277,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontFamily="Cambria"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,22,0,0" TextWrapping="Wrap" Text="Character Kollection" FontSize="25" VerticalAlignment="Top" FontFamily="Impact"/>
+        <Button x:Name="Load" Content="Load Kollection" FontFamily="Cambria" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Background="#FF8FE48D" Width="150" BorderBrush="Black" Click="Load_Click"/>
+        <DataGrid x:Name="Kollection" d:ItemsSource="{d:SampleData ItemCount=10}" Margin="10,69,10,127"/>
+        <Button x:Name="Delete" Content="Delete Character" FontFamily="Cambria" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Background="#FF8FE48D" Width="150" BorderBrush="Black" Click="Delete_Click"/>
+    </Grid>
+</Window>
